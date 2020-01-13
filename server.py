@@ -25,7 +25,7 @@ app.secret = os.environ.get('SECRET')
 DREAMS = ['Python. Python, everywhere.']
 
 ldclient.set_sdk_key("sdk-e3c5285b-231c-446a-9cb5-7304dfca5edd")
-
+ld_client = ldclient.get()
 
 @app.after_request
 def apply_kr_hello(response):
@@ -47,7 +47,12 @@ def homepage():
 
 @app.route('/lol')
 def rlol():
-    return jsonify(test.lol())
+    show_feature = ld_client.variation("my-first-flag", { "key": "123" }, False)
+    if show_feature:
+      # return jsonify(test.lol())
+      return jsonify("on")
+    else:
+      return jsonify("off")
   
 @app.route('/dreams', methods=['GET', 'POST'])
 def dreams():
