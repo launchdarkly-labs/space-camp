@@ -13,6 +13,7 @@
 import os
 from flask import Flask, request, render_template, jsonify
 import test
+import ldclient
 
 # Support for gomix's 'front-end' and 'back-end' UI.
 app = Flask(__name__, static_folder='public', template_folder='views')
@@ -22,6 +23,8 @@ app.secret = os.environ.get('SECRET')
 
 # Dream database. Store dreams in memory for now. 
 DREAMS = ['Python. Python, everywhere.']
+
+ldclient.set_sdk_key("sdk-e3c5285b-231c-446a-9cb5-7304dfca5edd")
 
 
 @app.after_request
