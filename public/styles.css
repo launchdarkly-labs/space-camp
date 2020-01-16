@@ -1,6 +1,6 @@
 body {
-  background: url('http://hdwpro.com/wp-content/uploads/2017/10/Cool-Space-Background.jpg');
-  background-size: 100%;
+  background: url('https://cdn.glitch.com/d62580d1-04a7-4eb1-9a98-30c4d9a7fd50%2Fspacex-PIOgkhaF3WA-unsplash.jpg?v=1579217398377') left bottom no-repeat;
+  height: 100vh;
 }
 .tier > div {
   height: 390px;

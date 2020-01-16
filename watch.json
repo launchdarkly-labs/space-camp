@@ -4,6 +4,7 @@
       "^public/"
     ],
     "include": [
+      "\\.css$",
       "\\.py$",
       "\\.html$",
       "\\.js$",
