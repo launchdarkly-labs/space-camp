@@ -1,14 +1,5 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
-<!-- You might want to try something fancier: -->
-<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
-<!-- jade: http://jade-lang.com/ -->
-<!-- haml: http://haml.info/tutorial.html -->
-<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Welcome to Glitch!</title>
     <meta name="description" content="A cool thing made with Glitch" />
@@ -20,7 +11,10 @@
     />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -29,31 +23,32 @@
     />
   </head>
   <body>
-    <header>
-      <h1>
-        A Dream of the Future
-      </h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>
+          Space Camp
+        </h1>
+      </header>
 
-    <main>
-      <p class="bold">Oh hi,</p>
-      <p>Tell me your hopes and dreams:</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="Dreams!" />
-        <button type="submit">Submit</button>
-      </form>
-      <section class="dreams">
-        <ul id="dreams"></ul>
-      </section>
-    </main>
+      <main>
+        <p class="bold">Oh hi,</p>
+        <p>Tell me your hopes and dreams:</p>
+        <form>
+          <input type="text" maxlength="100" placeholder="Dreams!" />
+          <button type="submit">Submit</button>
+        </form>
+        <section class="dreams">
+          <ul id="dreams"></ul>
+        </section>
+      </main>
 
-    <footer>
-      <a href="https://glitch.com">
-        Remix this in Glitch
-      </a>
-    </footer>
+      <footer>
+        <a href="https://glitch.com">
+          Remix this in Glitch
+        </a>
+      </footer>
+    </div>
 
-    <!-- Your web-app is https, so your scripts need to be too -->
     <script
       src="https://code.jquery.com/jquery-2.2.1.min.js"
       integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="

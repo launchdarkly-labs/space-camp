@@ -1,0 +1,13 @@
+{
+  "restart": {
+    "exclude": [
+      "^public/"
+    ],
+    "include": [
+      "\\.py$",
+      "\\.html$",
+      "\\.js$",
+      "\\.json"
+    ]
+  }
+}
