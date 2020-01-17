@@ -30,7 +30,7 @@ def apply_kr_hello(response):
 @app.route('/')
 def homepage():
     """Displays the homepage."""
-    return render_template('index.html')
+    return render_template('index.html', name="hello")
 
 @app.route('/lol')
 def rlol():
