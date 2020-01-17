@@ -1,34 +1,13 @@
-// client-side js
-// run by the browser each time your view template is loaded
-
-// by default, you've got jQuery,
-// add other scripts at the bottom of index.html
-
-$(function() {
-  console.log('hello world :o');
-  
-  $.get('/dreams', function(dreams) {
-    dreams.forEach(function(dream) {
-      $('<li></li>').text(dream).appendTo('ul#dreams');
-    });
-  });
-
-  $('form').submit(function(event) {
+$(document).keydown(function(event) {
+  console.log(event);
+   if((event.ctrlKey || event.metaKey) && event.which == 75) {
     event.preventDefault();
-    dream = $('input').val();
-    $.post('/dreams?' + $.param({'dream': dream}), function() {
-      $('<li></li>').text(dream).appendTo('ul#dreams');
-      $('input').val('');
-      $('input').focus();
-    });
-  });
-
+    const KICKASSVERSION = "2.0";
+    const s = document.createElement("script");
+    s.type = "text/javascript";
+    document.body.appendChild(s);
+    s.src = "//hi.kickassapp.com/kickass.js";
+    return false;
+  }
+  return true;
 });
-
-function startKickAss() {
-  var KICKASSVERSION='2.0';
-  var s = document.createElement('script');
-  s.type='text/javascript';
-  document.body.appendChild(s);
-  s.src='//hi.kickassapp.com/kickass.js';  
-}
