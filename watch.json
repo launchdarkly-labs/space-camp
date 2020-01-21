@@ -1,14 +1,18 @@
 {
+  "install": {
+    "include": [
+      "^package\\.json$",
+      "^\\.env$"
+    ]
+  },
   "restart": {
     "exclude": [
       "^public/"
     ],
     "include": [
-      "\\.css$",
       "\\.py$",
       "\\.html$",
-      "\\.js$",
-      "\\.json"
+      "\\.json$"
     ]
   }
 }
