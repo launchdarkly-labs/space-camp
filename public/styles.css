@@ -1,5 +1,5 @@
 body {
-  background: url('https://cdn.glitch.com/d62580d1-04a7-4eb1-9a98-30c4d9a7fd50%2Fspacex-PIOgkhaF3WA-unsplash.jpg?v=1579217398377') left bottom no-repeat;
+  background: url('https://cdn.glitch.com/d62580d1-04a7-4eb1-9a98-30c4d9a7fd50%2FLD_StarsBackground_small.jpg?v=1579637528651') left bottom no-repeat;
   height: 100vh;
 }
 header > h1 {
@@ -7,5 +7,6 @@ header > h1 {
 }
 footer {
   background: url(https://cdn.glitch.com/d62580d1-04a7-4eb1-9a98-30c4d9a7fd50%2FLaunchDarkly_Horizontal_Primary_Logo_on_Dark_no_padding.svg?v=1579637253972) no-repeat;
-  height: 20px;
+  height: 30px;
+  background-position-x: center;
 }
