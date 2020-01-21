@@ -2,49 +2,11 @@
 {% block main %}
 <section class="pricing py-5">
   <div class="container">
-    <div class="row">
-      
-      <!-- Freighter Tier -->
-      <div class="card-deck">
-        <div class="card h-100 mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-center">
-              Freighter Class
-            </h5>
-            <h6 class="card-price text-center">
-              <i class="fab fa-btc"></i> 10,000
-            </h6>
-            <hr />
-            <ul class="fa-ul">
-              <li>
-                <span class="fa-li"><i
-                    class="fas fa-rocket"></i></span>Mid-class
-                x696 space tourer
-              </li>
-              <li>
-                <span class="fa-li"><i
-                    class="fas fa-couch"></i></span>Spacious
-                Zero-Grav seating
-              </li>
-              <li>
-                <span class="fa-li"><i
-                    class="fas fa-utensils"></i></span>Light
-                snack & beverage service while in
-                orbit
-              </li>
-              <li>
-                <span class="fa-li"><i
-                    class="fas fa-suitcase"></i></span>1
-                carry-on bag allowed
-              </li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-block btn-primary">
-              Select class
-            </a>
-          </div>
-        </div>
+    <div class="row">      
+      <div class="card-group">
+  
+        <!-- Freighter Tier -->
+        {% block pricing_1 %}{% endblock %}
 
         <!-- Constellation Tier -->
         <div class="card h-100 mb-5 mb-lg-0">
@@ -100,7 +62,7 @@
         </div>
 
         <!-- Admiral Tier -->
-<!--         <div class="card h-100">
+        <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title text-center">
               Admiral Class
@@ -159,7 +121,7 @@
             <a href="#"
               class="btn btn-block btn-primary">Select class</a>
           </div>
-        </div> -->
+        </div>
         
       </div>
     </div>
