@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import os
-from flask import Flask, request, render_template, jsonify
-import test
+from flask import Flask, render_template
 
 app = Flask(__name__, static_folder='public', template_folder='views')
 
